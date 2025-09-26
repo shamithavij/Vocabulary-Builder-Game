@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('ke.jpg'); /* ← replace with your image file */
+  background-size: cover;   /* make sure it covers full screen */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-attachment: fixed;
+
+}
+
+
+.game-container {
+  background: #ffffffcc;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  width: 900px;   /* increased width */
+  min-height: 500px; /* larger height */
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 48px;   /* bigger title */
+}
+
+#hint {
+  font-size: 24px;   /* bigger hint */
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+#word {
+  font-size: 48px;   /* bigger word */
+  letter-spacing: 12px;
+  margin: 30px 0;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+#guessInput {
+  padding: 18px;
+  width: 60%;
+  margin-bottom: 15px;
+  border: 2px solid #2193b0;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 24px;   /* bigger input text */
+}
+
+button {
+  padding: 18px 30px;
+  background: #2193b0;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 8px;
+  transition: 0.3s;
+  font-size: 22px;   /* bigger button text */
+}
+
+button:hover {
+  background: #176f85;
+}
+
+#message {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 28px;   /* bigger message */
+  color: #e74c3c;
+}
+
+#score {
+  margin-top: 20px;
+  font-size: 28px;   /* bigger score */
+  font-weight: bold;
+  color: #27ae60;
+}

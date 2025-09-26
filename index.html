@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocabulary Builder Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Vocabulary Builder Game</h1>
+
+    <div id="categorySelect">
+      <p>Select a Category:</p>
+      <button onclick="selectCategory('Animals')">Animals</button>
+      <button onclick="selectCategory('Places')">Places / Nature</button>
+      <button onclick="selectCategory('Objects')">Objects</button>
+      <button onclick="selectCategory('Food')">Food</button>
+      <button onclick="selectCategory('Games')">Games / Sports</button>
+      <button onclick="selectCategory('Misc')">Misc / People</button>
+    </div>
+
+    <div id="gameArea" style="display:none;">
+      <p id="hint"></p>
+      <p id="word"></p>
+
+      <input type="text" id="guessInput" placeholder="Enter your guess">
+      <button onclick="checkGuess()">Guess</button>
+
+      <p id="message"></p>
+      <p id="score">Score: 0</p>
+
+      <button onclick="nextWord()">Next Word</button>
+      <button onclick="restartGame()">Change Category</button>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
